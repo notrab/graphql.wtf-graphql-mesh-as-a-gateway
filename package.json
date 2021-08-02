@@ -1,0 +1,17 @@
+{
+  "name": "graphql.wtf-graphql-mesh",
+  "private": true,
+  "scripts": {
+    "build": "mesh build",
+    "dev": "mesh dev",
+    "start": "mesh start",
+    "validate": "mesh validate"
+  },
+  "dependencies": {
+    "@graphql-mesh/cli": "0.32.1",
+    "@graphql-mesh/graphql": "0.18.0",
+    "@graphql-mesh/openapi": "0.18.0",
+    "@graphql-mesh/runtime": "0.18.0",
+    "graphql": "15.5.1"
+  }
+}

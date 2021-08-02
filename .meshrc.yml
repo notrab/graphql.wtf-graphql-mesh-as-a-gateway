@@ -1,0 +1,16 @@
+sources:
+  - name: Countries
+    handler:
+      graphql:
+        endpoint: https://countries.trevorblades.com
+  - name: CartQL
+    handler:
+      graphql:
+        endpoint: https://api.cartql.com
+  - name: Stripe
+    handler:
+      openapi:
+        source: https://raw.githubusercontent.com/stripe/openapi/master/openapi/spec3.json
+        baseUrl: https://api.stripe.com
+        operationHeaders:
+          Authorization: "Bearer {env.STRIPE_SECRET_KEY}"
